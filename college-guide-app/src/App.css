@@ -1,0 +1,513 @@
+/* General Body Styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif; /* Example: A modern, clean font */
+  background-color: #f0f2f5; /* Light grey background for a soft feel */
+  color: #333; /* Dark grey for general text */
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* App Container */
+.app-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff; /* White background for the main content area */
+  border-radius: 10px; /* Softly rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+
+/* Titles and Headings */
+.main-title {
+  text-align: center;
+  color: #2c3e50; /* Darker shade for main titles */
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+
+.section-title {
+  color: #34495e; /* Slightly lighter than main title */
+  margin-top: 25px;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  border-bottom: 2px solid #e0e0e0; /* Subtle separator */
+  padding-bottom: 10px;
+}
+
+
+h3 {
+  color: #34495e;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+
+h4 {
+  color: #4CAF50; /* Accent color for sub-titles/item titles */
+  margin-bottom: 8px;
+  font-size: 1.25rem;
+}
+
+
+p {
+  margin-bottom: 5px;
+}
+
+
+a {
+  color: #007bff; /* Standard link blue */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+
+a:hover {
+  color: #0056b3; /* Darker blue on hover */
+  text-decoration: underline;
+}
+
+
+/* Messages */
+.message {
+  background-color: #d4edda; /* Light green for success messages */
+  color: #155724; /* Dark green text */
+  border: 1px solid #c3e6cb;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 500;
+}
+
+
+/* Navigation Tabs */
+.nav-tabs {
+  display: flex;
+  flex-wrap: wrap; /* Allows tabs to wrap on smaller screens */
+  justify-content: center;
+  margin-bottom: 20px;
+  background-color: #e9ecef; /* Light grey background for tab bar */
+  border-radius: 8px;
+  padding: 5px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05); /* Inner shadow */
+}
+
+
+.nav-tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  font-weight: 500;
+  color: #555; /* Default tab text color */
+  margin: 0 5px; /* Spacing between tabs */
+  white-space: nowrap; /* Prevent tab text from wrapping */
+}
+
+
+.nav-tab.active {
+  background-color: #007bff; /* Blue for active tab */
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 123, 255, 0.2); /* Shadow for active tab */
+}
+
+
+.nav-tab:not(.active):hover {
+  background-color: #d6eaff; /* Light blue on hover for inactive tabs */
+  color: #007bff; /* Change text color on hover */
+}
+
+
+/* Buttons */
+.btn-primary {
+  background-color: #4CAF50; /* Green primary button */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  margin-right: 10px; /* Space out buttons */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.btn-primary:hover {
+  background-color: #45a049;
+  transform: translateY(-2px); /* Slight lift on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+.btn-secondary {
+  background-color: #6c757d; /* Grey secondary button */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+.btn-edit {
+  background-color: #ffc107; /* Yellow for edit buttons */
+  color: #333;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+  margin-right: 8px;
+}
+
+
+.btn-edit:hover {
+  background-color: #e0a800;
+}
+
+
+.btn-delete {
+  background-color: #dc3545; /* Red for delete buttons */
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+
+.btn-delete:hover {
+  background-color: #c82333;
+}
+
+
+/* Forms */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive columns */
+  gap: 20px;
+  background-color: #f8f9fa; /* Light background for forms */
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  margin-top: 20px;
+}
+
+
+.form-grid h3 {
+  grid-column: 1 / -1; /* Make heading span all columns */
+  text-align: center;
+  margin-bottom: 20px;
+  color: #4CAF50; /* Match accent */
+}
+
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #333;
+}
+
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group input[type="email"],
+.form-group input[type="date"],
+.form-group input[type="url"],
+.form-group input[type="tel"],
+.form-group select,
+.form-group textarea {
+  width: calc(100% - 20px); /* Account for padding */
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box; /* Include padding in element's total width and height */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #80bdff; /* Blue border on focus */
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Subtle blue shadow on focus */
+}
+
+
+.form-grid button {
+  grid-column: span 1; /* Buttons take one column */
+  /* If you want buttons to span full width on small screens, adjust media query */
+}
+
+
+/* Summary Cards (e.g., GPA) */
+.summary-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  text-align: center;
+}
+
+
+.gpa-display {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #4CAF50; /* Accent color for GPA */
+  margin: 10px 0;
+}
+
+
+/* List Containers / Grids for Displaying Data */
+.list-container {
+  margin-top: 30px;
+}
+
+
+.class-grid,
+.assignment-grid,
+.skills-grid,
+.references-grid,
+.extracurriculars-grid,
+.internships-grid,
+.skills-to-gain-grid,
+.applications-grid,
+.contacts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Flexible grid columns */
+  gap: 20px;
+}
+
+
+.data-card {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Push actions to bottom */
+}
+
+
+.data-card p {
+  margin-bottom: 5px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+
+.data-card strong {
+  color: #333;
+}
+
+
+.card-actions {
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end; /* Align buttons to the right */
+  gap: 10px; /* Space between action buttons */
+}
+
+
+/* Specific item styles */
+.assignment-notes,
+.reference-notes,
+.extracurricular-description,
+.internship-description,
+.application-notes,
+.contact-notes {
+  font-size: 0.95rem;
+  color: #6c757d;
+  margin-top: 10px;
+}
+
+
+/* To-Do List Specific Styles */
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  background-color: #fdfdfd;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease;
+}
+
+
+.todo-item input[type="checkbox"] {
+  transform: scale(1.3); /* Slightly larger checkbox */
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+
+.todo-item .todo-description {
+  flex-grow: 1; /* Take up available space */
+  font-size: 1.1rem;
+}
+
+
+.todo-item .todo-due-date {
+  font-size: 0.9rem;
+  color: #777;
+  white-space: nowrap; /* Prevent date from wrapping */
+}
+
+
+.todo-item.completed {
+  background-color: #e6ffe6; /* Lighter green for completed items */
+  border-color: #c9f5c9;
+  text-decoration: line-through;
+  color: #888;
+}
+
+
+.todo-item.completed .todo-description {
+  color: #888; /* Dim completed text */
+}
+
+
+/* Utility Classes */
+.mt-4 {
+  margin-top: 1.5rem; /* Equivalent to 24px */
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .main-title {
+    font-size: 2.2rem;
+  }
+  .section-title {
+    font-size: 1.8rem;
+  }
+  .nav-tabs {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0; /* Remove padding from flex container as tabs will fill */
+  }
+  .nav-tab {
+    width: 100%;
+    text-align: center;
+    border-radius: 0;
+    margin: 0; /* Remove horizontal margin */
+    border-bottom: 1px solid #dcdcdc; /* Separator for vertical tabs */
+  }
+  .nav-tab:last-child {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom: none; /* No separator for the very last tab */
+  }
+  .nav-tab:first-of-type {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  .form-grid {
+    grid-template-columns: 1fr; /* Single column for forms on smaller screens */
+  }
+  .list-container,
+  .skills-grid,
+  .summary-cards,
+  .class-grid,
+  .assignment-grid,
+  .references-grid,
+  .extracurriculars-grid,
+  .internships-grid,
+  .skills-to-gain-grid,
+  .applications-grid,
+  .contacts-grid {
+    grid-template-columns: 1fr; /* Single column for all data grids */
+  }
+  .card-actions {
+    justify-content: center; /* Center action buttons on small screens */
+  }
+}
+
+
+@media (max-width: 576px) {
+  .app-container {
+    margin: 10px auto;
+    padding: 10px;
+  }
+  .main-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  .section-title {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px; /* Stack buttons vertically */
+  }
+  .form-grid {
+    padding: 15px;
+    gap: 15px;
+  }
+  .data-card {
+    padding: 15px;
+  }
+  .todo-item {
+    flex-wrap: wrap; /* Allow todo items to wrap */
+  }
+  .todo-item .todo-due-date {
+    flex-basis: 100%; /* Make due date span full width if needed */
+    text-align: right;
+  }
+}
+
+
