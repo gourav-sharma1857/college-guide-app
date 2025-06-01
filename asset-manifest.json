@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/college-guide-app/static/css/main.80280e36.css",
+    "main.js": "/college-guide-app/static/js/main.44f88a6d.js",
+    "static/js/453.777687e2.chunk.js": "/college-guide-app/static/js/453.777687e2.chunk.js",
+    "index.html": "/college-guide-app/index.html",
+    "main.80280e36.css.map": "/college-guide-app/static/css/main.80280e36.css.map",
+    "main.44f88a6d.js.map": "/college-guide-app/static/js/main.44f88a6d.js.map",
+    "453.777687e2.chunk.js.map": "/college-guide-app/static/js/453.777687e2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.80280e36.css",
+    "static/js/main.44f88a6d.js"
+  ]
+}
